@@ -1,7 +1,7 @@
 # 🚀 NEXUS Digital - Professional Web Solutions Platform
 
 <div align="center">
-**showcasing professional web solutions**
+
 
 [🌐 Live Demo](#) -  [📖 Documentation](#documentation) -  [✨ Features](#features) -  [🚀 Quick Start](#quick-start)
 
@@ -343,14 +343,3 @@ This project was developed as the capstone project during my Web Development Int
 *© 2025 - Developed as part of Prodigy InfoTech Internship Program*
 
 </div>
-
-[1](https://github.com/othneildrew/Best-README-Template)
-[2](https://github.com/topics/readme-template)
-[3](https://gist.github.com/ramantehlan/602ad8525699486e097092e4158c5bf1)
-[4](https://github.com/UI-Research/readme-template)
-[5](https://dev.to/sumonta056/github-readme-template-for-personal-projects-3lka)
-[6](https://everhour.com/blog/github-readme-template/)
-[7](https://www.makeareadme.com)
-[8](https://www.readme-templates.com)
-[9](https://github.com/topics/web-development-project)
-[10](https://rahuldkjain.github.io/gh-profile-readme-generator/)
