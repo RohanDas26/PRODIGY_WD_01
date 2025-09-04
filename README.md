@@ -1,7 +1,7 @@
 # 🚀 NEXUS Digital - Professional Web Solutions Platform
 
 <div align="center">
-***showcasing professional web solutions**
+**showcasing professional web solutions**
 
 [🌐 Live Demo](#) -  [📖 Documentation](#documentation) -  [✨ Features](#features) -  [🚀 Quick Start](#quick-start)
 
