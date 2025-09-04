@@ -1,15 +1,7 @@
 # 🚀 NEXUS Digital - Professional Web Solutions Platform
 
 <div align="center">
-
-[
-[
-[
-[
-
-
-
-![Maintenance](https://img.shields.io/badge/maintaineern showcasing professional web solutions**
+***showcasing professional web solutions**
 
 [🌐 Live Demo](#) -  [📖 Documentation](#documentation) -  [✨ Features](#features) -  [🚀 Quick Start](#quick-start)
 
