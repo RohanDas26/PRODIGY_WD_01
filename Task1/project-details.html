@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Details - Step 2 | Nexus Digital</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/forms.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+</head>
+<body class="form-page">
+    <!-- Progress Bar -->
+    <div class="progress-container">
+        <div class="progress-bar">
+            <div class="progress-fill" style="width: 50%"></div>
+        </div>
+        <div class="progress-steps">
+            <div class="progress-step completed">
+                <div class="step-circle">✓</div>
+                <span>Project Type</span>
+            </div>
+            <div class="progress-step active">
+                <div class="step-circle">2</div>
+                <span>Details</span>
+            </div>
+            <div class="progress-step">
+                <div class="step-circle">3</div>
+                <span>Contact</span>
+            </div>
+            <div class="progress-step">
+                <div class="step-circle">4</div>
+                <span>Complete</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <header class="form-header">
+        <div class="container">
+            <a href="get-started.html" class="back-btn">
+                <span class="back-icon">←</span>
+                Back
+            </a>
+            <div class="logo-wrapper">
+                <span class="logo-text">NEXUS</span>
+                <div class="logo-accent"></div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="form-main">
+        <div class="container">
+            <div class="form-content">
+                <div class="form-header-content">
+                    <h1 class="form-title">Tell us about your project</h1>
+                    <p class="form-subtitle">The more details you provide, the better we can understand your needs and provide an accurate quote.</p>
+                </div>
+
+                <form id="project-details-form" class="project-details-form">
+                    <div class="form-grid">
+                        <div class="form-group full-width">
+                            <label for="project-name">Project Name *</label>
+                            <input type="text" id="project-name" name="projectName" required 
+                                   placeholder="e.g., My Awesome Website">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="budget">Budget Range *</label>
+                            <select id="budget" name="budget" required>
+                                <option value="">Select Budget</option>
+                                <option value="1000-2999">$1,000 - $2,999</option>
+                                <option value="3000-4999">$3,000 - $4,999</option>
+                                <option value="5000-9999">$5,000 - $9,999</option>
+                                <option value="10000+">$10,000+</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="timeline">Timeline *</label>
+                            <select id="timeline" name="timeline" required>
+                                <option value="">Select Timeline</option>
+                                <option value="1-2weeks">1-2 weeks</option>
+                                <option value="1month">1 month</option>
+                                <option value="2-3months">2-3 months</option>
+                                <option value="3months+">3+ months</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group full-width">
+                            <label>Features Needed (select all that apply)</label>
+                            <div class="checkbox-grid">
+                                <label class="checkbox-item">
+                                    <input type="checkbox" name="features" value="responsive-design">
+                                    <span class="checkmark"></span>
+                                    Responsive Design
+                                </label>
+                                <label class="checkbox-item">
+                                    <input type="checkbox" name="features" value="e-commerce">
+                                    <span class="checkmark"></span>
+                                    E-commerce
+                                </label>
+                                <label class="checkbox-item">
+                                    <input type="checkbox" name="features" value="user-auth">
+                                    <span class="checkmark"></span>
+                                    User Authentication
+                                </label>
+                                <label class="checkbox-item">
+                                    <input type="checkbox" name="features" value="payment">
+                                    <span class="checkmark"></span>
+                                    Payment Integration
+                                </label>
+                                <label class="checkbox-item">
+                                    <input type="checkbox" name="features" value="cms">
+                                    <span class="checkmark"></span>
+                                    Content Management
+                                </label>
+                                <label class="checkbox-item">
+                                    <input type="checkbox" name="features" value="analytics">
+                                    <span class="checkmark"></span>
+                                    Analytics Dashboard
+                                </label>
+                            </div>
+                        </div>
+
+                        <div class="form-group full-width">
+                            <label for="description">Project Description *</label>
+                            <textarea id="description" name="description" required 
+                                    placeholder="Describe your project goals, target audience, and any specific requirements..."></textarea>
+                        </div>
+
+                        <div class="form-group full-width">
+                            <label for="inspiration">Inspiration/Reference Sites (optional)</label>
+                            <textarea id="inspiration" name="inspiration" 
+                                    placeholder="Share any websites or designs that inspire you..."></textarea>
+                        </div>
+                    </div>
+
+                    <div class="form-actions">
+                        <button type="button" class="btn-secondary" onclick="window.location.href='get-started.html'">
+                            ← Back
+                        </button>
+                        <button type="submit" class="btn-primary">
+                            Continue to Contact →
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </main>
+
+    <script src="js/forms.js"></script>
+    <script src="js/transitions.js"></script>
+</body>
+</html>

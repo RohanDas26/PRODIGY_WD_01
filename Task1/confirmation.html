@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thank You! - Project Submitted | Nexus Digital</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/forms.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+</head>
+<body class="form-page confirmation-page">
+    <!-- Progress Bar -->
+    <div class="progress-container">
+        <div class="progress-bar">
+            <div class="progress-fill" style="width: 100%"></div>
+        </div>
+        <div class="progress-steps">
+            <div class="progress-step completed">
+                <div class="step-circle">✓</div>
+                <span>Project Type</span>
+            </div>
+            <div class="progress-step completed">
+                <div class="step-circle">✓</div>
+                <span>Details</span>
+            </div>
+            <div class="progress-step completed">
+                <div class="step-circle">✓</div>
+                <span>Contact</span>
+            </div>
+            <div class="progress-step completed">
+                <div class="step-circle">✓</div>
+                <span>Complete</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <header class="form-header">
+        <div class="container">
+            <div class="logo-wrapper">
+                <span class="logo-text">NEXUS</span>
+                <div class="logo-accent"></div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="form-main confirmation-main">
+        <div class="container">
+            <div class="confirmation-content">
+                <div class="success-animation">
+                    <div class="success-checkmark">
+                        <div class="check-icon">
+                            <span class="icon-line line-tip"></span>
+                            <span class="icon-line line-long"></span>
+                            <div class="icon-circle"></div>
+                            <div class="icon-fix"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="confirmation-text">
+                    <h1 class="confirmation-title">Thank You!</h1>
+                    <p class="confirmation-subtitle">Your project submission was successful. We've received all your details and will get back to you soon.</p>
+                </div>
+
+                <div class="project-summary" id="project-summary">
+                    <h2>Project Summary</h2>
+                    <div class="summary-grid">
+                        <div class="summary-item">
+                            <span class="summary-label">Project Type:</span>
+                            <span class="summary-value" id="summary-type">-</span>
+                        </div>
+                        <div class="summary-item">
+                            <span class="summary-label">Budget Range:</span>
+                            <span class="summary-value" id="summary-budget">-</span>
+                        </div>
+                        <div class="summary-item">
+                            <span class="summary-label">Timeline:</span>
+                            <span class="summary-value" id="summary-timeline">-</span>
+                        </div>
+                        <div class="summary-item">
+                            <span class="summary-label">Contact:</span>
+                            <span class="summary-value" id="summary-contact">-</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="next-steps">
+                    <h2>What happens next?</h2>
+                    <div class="steps-timeline">
+                        <div class="timeline-step">
+                            <div class="step-marker">1</div>
+                            <div class="step-content">
+                                <h3>Review & Analysis</h3>
+                                <p>Our team will review your requirements within 2-4 hours</p>
+                            </div>
+                        </div>
+                        <div class="timeline-step">
+                            <div class="step-marker">2</div>
+                            <div class="step-content">
+                                <h3>Custom Proposal</h3>
+                                <p>We'll prepare a detailed proposal and timeline for your project</p>
+                            </div>
+                        </div>
+                        <div class="timeline-step">
+                            <div class="step-marker">3</div>
+                            <div class="step-content">
+                                <h3>Discovery Call</h3>
+                                <p>Schedule a call to discuss your project in detail</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="confirmation-actions">
+                    <a href="index.html" class="btn-primary">
+                        ← Back to Home
+                    </a>
+                    <button type="button" class="btn-secondary" onclick="window.print()">
+                        📄 Print Summary
+                    </button>
+                </div>
+
+                <div class="social-share">
+                    <p>Share your excitement:</p>
+                    <div class="share-buttons">
+                        <a href="#" class="share-btn twitter">Share on Twitter</a>
+                        <a href="#" class="share-btn linkedin">Share on LinkedIn</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="js/forms.js"></script>
+    <script src="js/transitions.js"></script>
+</body>
+</html>

@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Get Started - Choose Your Project Type | Nexus Digital</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/forms.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+</head>
+<body class="form-page">
+    <!-- Progress Bar -->
+    <div class="progress-container">
+        <div class="progress-bar">
+            <div class="progress-fill" style="width: 25%"></div>
+        </div>
+        <div class="progress-steps">
+            <div class="progress-step active">
+                <div class="step-circle">1</div>
+                <span>Project Type</span>
+            </div>
+            <div class="progress-step">
+                <div class="step-circle">2</div>
+                <span>Details</span>
+            </div>
+            <div class="progress-step">
+                <div class="step-circle">3</div>
+                <span>Contact</span>
+            </div>
+            <div class="progress-step">
+                <div class="step-circle">4</div>
+                <span>Complete</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <header class="form-header">
+        <div class="container">
+            <a href="index.html" class="back-btn">
+                <span class="back-icon">←</span>
+                Back to Home
+            </a>
+            <div class="logo-wrapper">
+                <span class="logo-text">NEXUS</span>
+                <div class="logo-accent"></div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="form-main">
+        <div class="container">
+            <div class="form-content">
+                <div class="form-header-content">
+                    <h1 class="form-title">What type of project do you have in mind?</h1>
+                    <p class="form-subtitle">Select the service that best matches your needs. We'll customize everything else based on your requirements.</p>
+                </div>
+
+                <form id="project-type-form" class="project-type-form">
+                    <div class="project-options">
+                        <div class="project-option" data-type="website">
+                            <div class="option-icon">💻</div>
+                            <div class="option-content">
+                                <h3>Website Development</h3>
+                                <p>Custom websites, e-commerce, portfolios, and business sites</p>
+                                <div class="option-features">
+                                    <span>• Responsive Design</span>
+                                    <span>• SEO Optimized</span>
+                                    <span>• Fast Loading</span>
+                                </div>
+                            </div>
+                            <div class="option-price">From $2,999</div>
+                            <div class="option-check">✓</div>
+                        </div>
+
+                        <div class="project-option" data-type="mobile">
+                            <div class="option-icon">📱</div>
+                            <div class="option-content">
+                                <h3>Mobile Application</h3>
+                                <p>iOS, Android, or cross-platform mobile apps</p>
+                                <div class="option-features">
+                                    <span>• Native Performance</span>
+                                    <span>• Push Notifications</span>
+                                    <span>• Offline Support</span>
+                                </div>
+                            </div>
+                            <div class="option-price">From $4,999</div>
+                            <div class="option-check">✓</div>
+                        </div>
+
+                        <div class="project-option" data-type="design">
+                            <div class="option-icon">🎨</div>
+                            <div class="option-content">
+                                <h3>UI/UX Design</h3>
+                                <p>User interface design, prototyping, and user experience</p>
+                                <div class="option-features">
+                                    <span>• User Research</span>
+                                    <span>• Wireframing</span>
+                                    <span>• Interactive Prototypes</span>
+                                </div>
+                            </div>
+                            <div class="option-price">From $1,999</div>
+                            <div class="option-check">✓</div>
+                        </div>
+
+                        <div class="project-option" data-type="fullstack">
+                            <div class="option-icon">⚡</div>
+                            <div class="option-content">
+                                <h3>Full-Stack Solution</h3>
+                                <p>Complete web application with backend and database</p>
+                                <div class="option-features">
+                                    <span>• Database Design</span>
+                                    <span>• API Development</span>
+                                    <span>• Admin Dashboard</span>
+                                </div>
+                            </div>
+                            <div class="option-price">From $7,999</div>
+                            <div class="option-check">✓</div>
+                        </div>
+                    </div>
+
+                    <div class="form-actions">
+                        <button type="button" class="btn-secondary" onclick="window.location.href='index.html'">
+                            ← Back
+                        </button>
+                        <button type="submit" class="btn-primary" id="continue-btn" disabled>
+                            Continue to Details →
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </main>
+
+    <script src="js/forms.js"></script>
+    <script src="js/transitions.js"></script>
+</body>
+</html>

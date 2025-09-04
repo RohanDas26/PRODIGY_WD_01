@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Information - Nexus Digital</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/forms.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+</head>
+<body class="form-page">
+    <!-- Progress Bar -->
+    <div class="progress-container">
+        <div class="progress-bar">
+            <div class="progress-fill" style="width: 75%;"></div>
+        </div>
+        <div class="progress-steps">
+            <div class="progress-step completed">
+                <div class="step-circle">✓</div>
+                <span>Project Type</span>
+            </div>
+            <div class="progress-step completed">
+                <div class="step-circle">✓</div>
+                <span>Details</span>
+            </div>
+            <div class="progress-step active">
+                <div class="step-circle">3</div>
+                <span>Contact</span>
+            </div>
+            <div class="progress-step">
+                <div class="step-circle">4</div>
+                <span>Complete</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Form Header -->
+    <div class="form-header">
+        <div class="container">
+            <a href="project-details.html" class="back-btn">
+                <span class="back-icon">←</span>
+                Back
+            </a>
+            <div class="logo-wrapper">
+                <span class="logo-text">NEXUS</span>
+                <div class="logo-accent"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <main class="form-main">
+        <div class="container">
+            <div class="form-content">
+                <!-- Header -->
+                <div class="form-header-content">
+                    <h1 class="form-title">Almost There!</h1>
+                    <p class="form-subtitle">Let's get your contact information so we can reach out with your custom quote.</p>
+                </div>
+
+                <!-- Contact Form -->
+                <form id="contact-info-form">
+                    <div class="form-grid">
+                        <!-- Personal Info -->
+                        <div class="form-group">
+                            <label for="first-name">First Name *</label>
+                            <input type="text" id="first-name" name="firstName" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="last-name">Last Name *</label>
+                            <input type="text" id="last-name" name="lastName" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">Email Address *</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="phone">Phone Number</label>
+                            <input type="tel" id="phone" name="phone">
+                        </div>
+
+                        <!-- Company Info -->
+                        <div class="form-group">
+                            <label for="company">Company Name</label>
+                            <input type="text" id="company" name="company">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="role">Your Role</label>
+                            <select id="role" name="role">
+                                <option value="">Select your role</option>
+                                <option value="founder">Founder/CEO</option>
+                                <option value="manager">Project Manager</option>
+                                <option value="developer">Developer</option>
+                                <option value="designer">Designer</option>
+                                <option value="marketing">Marketing</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+
+                        <!-- NEW REDESIGNED RADIO SECTION -->
+                        <div class="form-group full-width">
+                            <label class="section-label">How did you hear about us?</label>
+                            <div class="radio-cards-grid">
+                                <label class="radio-card">
+                                    <input type="radio" name="source" value="google">
+                                    <div class="radio-card-content">
+                                        <div class="radio-icon">🔍</div>
+                                        <span class="radio-title">Google Search</span>
+                                        <div class="radio-indicator"></div>
+                                    </div>
+                                </label>
+                                
+                                <label class="radio-card">
+                                    <input type="radio" name="source" value="social">
+                                    <div class="radio-card-content">
+                                        <div class="radio-icon">📱</div>
+                                        <span class="radio-title">Social Media</span>
+                                        <div class="radio-indicator"></div>
+                                    </div>
+                                </label>
+                                
+                                <label class="radio-card">
+                                    <input type="radio" name="source" value="referral">
+                                    <div class="radio-card-content">
+                                        <div class="radio-icon">👥</div>
+                                        <span class="radio-title">Referral</span>
+                                        <div class="radio-indicator"></div>
+                                    </div>
+                                </label>
+                                
+                                <label class="radio-card">
+                                    <input type="radio" name="source" value="other">
+                                    <div class="radio-card-content">
+                                        <div class="radio-icon">✨</div>
+                                        <span class="radio-title">Other</span>
+                                        <div class="radio-indicator"></div>
+                                    </div>
+                                </label>
+                            </div>
+                        </div>
+
+                        <!-- Consent Checkbox -->
+                        <div class="form-group full-width">
+                            <label class="checkbox-item consent">
+                                <input type="checkbox" name="consent" required>
+                                <span class="checkmark"></span>
+                                I agree to receive communication about my project and understand that Nexus Digital will contact me regarding my inquiry.
+                            </label>
+                        </div>
+                    </div>
+
+                    <!-- Form Actions -->
+                    <div class="form-actions">
+                        <a href="project-details.html" class="btn-secondary">← Previous</a>
+                        <button type="submit" class="btn-primary">
+                            Submit Request →
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </main>
+
+    <!-- Scripts -->
+    <script src="js/main.js"></script>
+    <script src="js/forms.js"></script>
+    <script src="js/transitions.js"></script>
+</body>
+</html>
